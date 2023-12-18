@@ -4,9 +4,10 @@
     font-family: sans-serif;
 }
 body{
+    margin: 0;
     text-align: center;
    color: rgba(0, 255, 255, 0.939);
-    padding: 80px;
+    padding: 0;
     background: rgb(7, 1, 4);
     background: rgb(116,116,116);
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 44, 44) 100%);
@@ -16,6 +17,11 @@ body{
   color: aqua;
     text-align: center;
     padding: 21px ;
+    
+}
+.efeito{
+    text-decoration: underline;
+    color: blue;
 }
 
 span{
@@ -46,8 +52,9 @@ background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgb(59, 56, 56) 100%);
         
     }
 
-    textarea{
+    .textarea{
         background-color: rgba(0, 0, 0, 0);
+        padding: 0;
     }
 
 
@@ -119,7 +126,40 @@ background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgb(59, 56, 56) 100%);
     }
 }
 
+/********************************** midia query do formulário *************************************/
 
+@media (min-width: 320px){
+    
+    .formulário{
+        width: 80%;  
+        margin-left: 8%;
+       
+        
+    }
+}
+@media (min-width: 500px){
+    
+    .formulário{
+        width: 50%;  
+        margin-left: 24%;
+       
+        
+    }
+    @media (min-width: 764px){
+    
+        .formulário{
+            width: 40%;  
+            margin-left: 29%;
+           
+            
+        }
 
-   
+        @media (min-width: 1064px){
+    
+            .formulário{
+                width: 30%;  
+                margin-left: 35%;
+               
+                
+            }
 
