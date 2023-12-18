@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    text-align: center;
+   color: rgba(0, 255, 255, 0.939);
+    padding: 80px;
+    background: rgb(7, 1, 4);
+    background: rgb(116,116,116);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(44, 44, 44) 100%);
+}
+/********************************** estilo do titulo *************************************/
+.h1 {
+  color: aqua;
+    text-align: center;
+    padding: 21px ;
+}
+
+span{
+    color: rgb(148, 143, 143);
+}
+ /********************************** dimenções do formulário *************************************/
+.formulário {
+    position: relative;
+    text-align: center;
+    padding: 4% 0;
+    width: 25%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 17px;
+    margin-left: 37%;
+    font-size: 18px;
+ 
+    /********************************** rgb do formulário *************************************/
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgb(39, 39, 39) 0%, rgb(59, 56, 56) 100%);
+    }
+
+    input{
+        
+        width: 70%;
+        background-color: rgba(8, 7, 8, 0);
+        border-radius: 7px;
+       
+        
+    }
+
+    textarea{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+/********************************** botão do formulário *************************************/
+
+
+.btn:link,
+.btn:visited{    
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.668);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.btn-white {
+    background-color: rgb(90, 85, 85);
+    color: rgb(13, 214, 187);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgba(255, 255, 255, 0.235);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+   
+
